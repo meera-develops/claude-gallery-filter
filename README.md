@@ -8,4 +8,4 @@ This project was built with Claude to learn agentic coding and practice building
 
 ## Visit the Gallery
 
-The project is currently being deployed can be accessed here: 
+The project is currently being deployed can be accessed here: https://meera-develops.github.io/claude-gallery-filter/
