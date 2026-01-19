@@ -34,6 +34,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+  padding-top: 1rem;
 }
 
 .city-card {
@@ -71,4 +72,68 @@
   color: #2e7d32;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+/* Large screens and above: show all 10 cards (5x2 grid) without scrolling */
+@media (min-width: 1024px) {
+  #root {
+    max-width: 1600px;
+    padding: 1rem 2rem;
+  }
+
+  .gallery-container h1 {
+    margin-bottom: 1rem;
+  }
+
+  .filter-controls {
+    margin-bottom: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .city-card img {
+    height: 150px;
+  }
+
+  .city-info {
+    padding: 0.75rem;
+  }
+
+  .city-info h3 {
+    font-size: 1rem;
+  }
+
+  .city-info .price {
+    font-size: 1rem;
+  }
+}
+
+/* XL screens: larger cards with more row padding */
+@media (min-width: 1400px) {
+  #root {
+    max-width: 1800px;
+  }
+
+  .gallery-grid {
+    gap: 1.5rem 1rem;
+  }
+
+  .city-card img {
+    height: 200px;
+  }
+
+  .city-info {
+    padding: 1rem;
+  }
+
+  .city-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .city-info .price {
+    font-size: 1.2rem;
+  }
 }
